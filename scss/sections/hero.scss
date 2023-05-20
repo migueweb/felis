@@ -1,0 +1,17 @@
+.hero {
+    @include grid(2, 0);
+}
+.shopNowWrapper {
+    width: 100%;
+    @include grid(1, 0);
+    place-items: center;
+}
+.shopNow{
+    text-align: center;
+}
+.shopNow-title {
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    padding: 0;
+}

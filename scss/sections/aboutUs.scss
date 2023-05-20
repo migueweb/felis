@@ -1,0 +1,18 @@
+.aboutUs {
+    margin-top: 10rem;
+    @include flex(row, wrap, space-between, center);
+}
+.aboutUs-content {
+    width: 50%;
+    h2 {
+        margin-bottom: 4rem;
+    }
+    .aboutUs-text {
+        font-size: 1.6rem;
+        font-weight: lighter;
+        line-height: 2.8rem;
+    }
+    img {
+        border-radius: .2rem;
+    }
+}

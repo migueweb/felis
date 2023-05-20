@@ -1,0 +1,36 @@
+.header {
+  @include flex(row, wrap, space-between, center);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: map-get($colors, "extra-dark-brown");
+  margin-right: 2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cartCount {
+  display: inline-block;
+  border: 1px solid map-get($colors, "extra-dark-brown");
+  padding: 3px 7px;
+  border-radius: 100%;
+
+  span {
+    @include flex(row, wrap, center, center);
+    font-size: 0.9em;
+  }
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 0;
+}
