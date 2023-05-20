@@ -1,0 +1,46 @@
+.ourFavorites {
+    margin-top: 10rem;
+}
+.ourFavorites-top {
+    @include flex(row, wrap, space-between, baseline);
+    margin-bottom: 2rem;
+    a {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+.ourFavorites-content {
+    @include grid(3, 0)
+
+}
+.cardWrapper {
+    height: 1200px;
+    @include flex(column, wrap, start, start);
+}
+.cardWrapperEnd {
+    @include flex(column, wrap, end, center);
+
+}
+.align-end{
+    @include flex(column, wrap, start, end);
+}
+.linkCard {
+    text-decoration: none;
+}
+.card {
+    text-decoration: none;
+    color: map-get($colors , "extra-dark-brown" );
+    img {
+        border-radius: .2rem;
+    }
+}
+.card-title {
+    font-family: Helvetica, sans-serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+.card-price {
+    opacity: 70%;
+}

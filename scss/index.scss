@@ -1,14 +1,5 @@
-@import './base.scss';
-@import './config.scss';
-
-html {
-    font-family: Helvetica, sans-serif;
-    color: map-get($colors , "extra-dark-brown" );
-}
-h1, h2, h3 {
-    font-family: Selna, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-body {
-    background-color: map-get($colors , "cream" );
-}
+@import "./base.scss";
+@import "./config.scss";
+@import "./utils.scss";
+@import "./general.scss";
+@import "./sections/sections.scss";

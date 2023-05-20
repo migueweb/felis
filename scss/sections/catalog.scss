@@ -1,0 +1,39 @@
+.catalog {
+    margin-top: 8rem;
+    @include flex(row, wrap, space-between, flex-start);
+}
+$itemWrapperHeight: 700px;
+.catalog-itemWrapperStart {
+    height: $itemWrapperHeight;
+    @include flex(column, wrap, start, start);
+    img {
+        border-radius: .2rem;
+    }
+}
+.catalog-itemWrapperCenter {
+    height: $itemWrapperHeight;
+    @include flex(column, wrap, center, start);
+}
+.catalog-itemWrapperEnd {
+    height: $itemWrapperHeight;
+    @include flex(column, wrap, end, start);
+    img {
+        border-radius: .2rem;
+    }
+}
+.catalogLinks {
+    @include flex(column, wrap, start, center);
+    gap: 2.8rem;
+}
+.catalogLinks-link {
+    display: block;
+    font-family: Selna;
+    text-decoration: none;
+    color: map-get($colors , "extra-dark-brown" );
+    font-size: 3rem;
+    font-weight: 500;
+    border-bottom: .1rem solid transparent;
+    &:hover {
+        border-bottom: .1rem solid map-get($colors , "extra-dark-brown" );
+    }
+}

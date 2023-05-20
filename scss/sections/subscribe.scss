@@ -1,0 +1,42 @@
+.subscribe {
+    margin-top: 10rem;
+    @include flex(column, wrap, center, center);
+    gap: 4.6rem;
+}
+.subscribe-header {
+    @include flex(column, wrap, center, center);
+    img {
+        margin-bottom: 1.6rem
+    }
+}
+.subscribeForm {
+    background-color: #000;
+}
+.subscribeForm-input {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: map-get($colors , "extra-dark-brown" );
+        font-weight: 500;
+    }
+}
+.susbcribeForm-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    transition: transform .3s ease-in-out;
+    &:hover{
+        transform: translateX(.2rem);
+    }
+}
+.susbcribeForm-border {
+    opacity: 80%;
+    margin-top: .4rem;
+    padding-bottom: .1rem;
+    display: block;
+    background-color: map-get($colors , "extra-dark-brown" );
+}

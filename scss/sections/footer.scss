@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 5rem;
+    border-top: .09rem solid map-get($colors , "extra-dark-brown" );
+    padding: 6rem 0 2rem 4rem;
+    h2 {
+        display: inline;
+    }
+}
+
+.footer-linksWrapper {
+    @include flex(row, wrap, space-evenly, start);
+    display: inline-flex;
+    width: 80%;
+    margin-top: 0;
+}
+.linksWrapperItem {
+    ul {
+        margin-top: 0;
+        li{
+            list-style: none;
+            margin-bottom: 1.4rem;
+        }
+    }
+}
+.footer-link {
+    text-decoration: none;
+    color: map-get($colors, "extra-dark-brown");
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.footer-copy {
+    margin-top: 3rem;
+    font-family: Selna, Inter, Helvetica, sans-serif;
+    color: map-get($colors , "extra-dark-brown" ); 
+    a {
+        text-decoration: none;
+        color: map-get($colors , "extra-dark-brown" );
+        font-weight: bold;
+    }
+}

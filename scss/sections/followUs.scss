@@ -1,0 +1,15 @@
+.followUs {
+    margin-top: 10rem;
+    @include flex(column, wrap, space-beetwen, center);
+}
+.followUs-header {
+    @include flex(row, wrap, center, center);
+    gap: 1.4rem;
+}
+.followUs-images {
+    @include flex(row, wrap, space-beetwen, center);
+    gap: 1.4rem;
+    img {
+        border-radius: .2rem;
+    }
+}
